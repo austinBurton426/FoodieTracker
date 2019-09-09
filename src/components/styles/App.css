@@ -1,0 +1,257 @@
+.container {
+  display:flex;
+  justify-content: space-evenly;;
+  position: relative;
+}
+
+  .flexbox-col{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flexbox-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flexbox-row > * {
+    margin: 5px;
+    width: 12em;
+  }
+  .indexBox {
+    background-color:rgba(15, 37, 37, 0.75);
+    margin-top:100px;
+    border:solid Goldenrod thin;
+    border-radius: 15px;
+    box-shadow: 3px 5px #282c34; 
+    width: 12em;
+    height: 400px;
+    max-height:800px;
+  }
+  .slider {
+    max-width: auto;
+    height: 800px;
+    margin: -640px auto;
+    position: relative;
+    z-index: -9;
+  }
+  .slide1,.slide2,.slide3,.slide4,.slide5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
+  .slide1 {
+    background: url(../images/Fruit.jpg)no-repeat center;
+        background-size: cover;
+      animation:fade 45s infinite;
+  -webkit-animation:fade 45s infinite;
+  /* -webkit-animation: MOVE-BG 1000s linear 40s; */
+
+
+
+  } 
+  .slide2 {
+    background: url(../images/Pasta.jpg)no-repeat center;
+        background-size: cover;
+      animation:fade2 45s infinite;
+  -webkit-animation:fade2 45s infinite;
+  /* -webkit-animation: MOVE-BG2 1000s linear 40s; */
+  }
+  .slide3 {
+      background: url(../images/Veggies.jpg)no-repeat center;
+        background-size: cover;
+      animation:fade3 45s infinite;
+  -webkit-animation:fade3 45s infinite;
+  /* -webkit-animation: MOVE-BG3 1000s linear 40s; */
+
+  }  .slide4 {
+    background: url(../images/Steak.jpg)no-repeat center;
+      background-size: cover;
+    animation:fade4 45s infinite;
+-webkit-animation:fade4 45s infinite;
+/* -webkit-animation: MOVE-BG4 1000s linear 40s; */
+
+}
+.slide5 {
+  background: url(../images/bread.jpg)no-repeat center;
+    background-size: cover;
+  animation:fade5 45s infinite;
+-webkit-animation:fade5 45s infinite;
+/* -webkit-animation: MOVE-BG5 1000s linear 40s; */
+
+}
+
+  @keyframes fade
+  {
+    0%   {opacity:1}
+    20% { opacity: 1}
+    40% { opacity: 0}
+    60% { opacity: 0}
+    80% { opacity: 0;}
+    100% { opacity: 0}
+  }
+  @keyframes fade2
+  {
+    0%   {opacity:0}
+    20% { opacity: 0}
+    40% { opacity: 1}
+    60% { opacity: 0}
+    80% { opacity: 0}
+    100% { opacity: 0}
+  }
+  @keyframes fade3{
+    0%   {opacity:0}
+    20% { opacity: 0}
+    40% { opacity: 0}
+    60% { opacity: 1}
+    80% { opacity: 0}
+    100% { opacity: 0}
+  }
+  @keyframes fade4{
+    0%   {opacity:0}
+    20% { opacity: 0}
+    40% { opacity: 0}
+    60% { opacity: 0}
+    80% { opacity: 1}
+    100% { opacity: 0}
+  }@keyframes fade5
+  {
+    0%   {opacity: 1}
+    5% {opacity: 1}
+    20% { opacity: 0}
+    40% { opacity: 0}
+    60% { opacity: 0}
+    80% { opacity: 0}
+    100% { opacity: 1}
+  }
+
+  @keyframes MOVE-BG {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to { 
+      -webkit-transform: translateX(-187%);
+    }
+  }
+
+  @keyframes MOVE-BG2 {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to { 
+      -webkit-transform: translateX(-187%);
+    }
+  }
+  @keyframes MOVE-BG3 {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to { 
+      -webkit-transform: translateX(-187%);
+    }
+  }
+  @keyframes MOVE-BG4 {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to { 
+      -webkit-transform: translateX(-187%);
+    }
+  }
+  @keyframes MOVE-BG5 {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to { 
+      -webkit-transform: translateX(-187%);
+    }
+  }
+
+
+  .lilPix {
+    width: 90px;
+  } 
+  .lilPix2 {
+    width: 60px;
+  }
+  .lilPix3 {
+    width: 75px;
+  }
+  .biggaPix {
+    width:100px;
+  }
+  .biggestPix {
+    overflow-wrap: break-word;
+    display:block;
+    width:250px;
+    height:100px;
+  }
+  .formFoodie {
+    font-size:30px;
+    margin-top:100px;
+    padding-top:20px;
+    padding-right:20px;
+    margin-bottom:120px;
+    padding:20px;
+    border-radius: 20px;
+    background-color:rgba(15, 37, 37, 0.75);
+    border: solid goldenrod thin;
+    display:flex;
+    flex-direction: column;
+    /* z-index: 1; */
+
+  }
+  .formPad {
+    border-radius:5px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top:5px;
+    font-size:20px;
+  }
+  .jym {
+    background-color:rgb(230, 15, 122);
+    color:white;
+    font-weight:thick;
+    border-radius:5px;
+  }
+  .searchPad {
+    margin-right:30px;
+    font-size:30px;
+margin-left:60px;
+  }
+  .salad {
+    font-size:20px;
+    margin-top:5px;
+    margin-left:33%;
+  }
+  .relative {
+    position:aboslute;
+    z-index: 2000;
+  }
+  .btnStuff {
+    display: flex;
+  }
+  .deleteBtn {
+    margin-left: 2px;
+    color:white;
+    background-color: red;
+    border-radius: 50%;
+  }
+  .updateBtn {  
+    border-radius: 5px;
+      background-color:rgba(15, 37, 37, 0.75);
+    border: solid goldenrod thin;
+
+    color:white;
+
+  }
+ 
+  
+  #content {
+    height: 300px;
+      text-align: center;
+      font-size: 26px;
+      color: #000;	
+      position: relative;
+  }
+  
+ 
