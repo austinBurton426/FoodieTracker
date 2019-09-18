@@ -85,7 +85,7 @@ class NewFoodie extends Component {
           <input
           className="biggestPix formPad"
             name="Description"
-            type="text"
+            type="text-area"
             placeholder="Description"
             onChange={this.handleChange}
           />

@@ -26,7 +26,9 @@ class UpdateSnack extends React.Component {
     //console.log(this.state)
 
     let { currentDate, ...body } = this.state;
-    body.Protein = currentDate;
+
+    body.Protein = currentDate;//need 2 fix
+    
     fetch(`${FOODS_API}/foodies/${this.props.data._id}`, {
       method: "PUT",
       headers: {

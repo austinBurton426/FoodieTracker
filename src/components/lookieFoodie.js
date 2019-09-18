@@ -19,6 +19,7 @@ class LookieFoodie extends React.Component {
   render() {
     return (
          <div>
+           <h1>{this.state.Description}</h1>
              <h2>{this.state.MealType}</h2>
              Date: {this.state.Meal}<br/>
              Calories: {this.state.Calories}<br/>
